@@ -1,0 +1,41 @@
+@font-face {
+  font-family: "OpenSans-Italic";
+
+  src: url("../assets/fonts/OpenSans-Italic.ttf");
+}
+
+@font-face {
+  font-family: "OpenSans-Regular";
+
+  src: url("../assets/fonts/OpenSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Segoe WP";
+
+  src: url("../assets/fonts/SegoeWP.ttf");
+}
+
+@font-face {
+  font-family: "Segoe WP light";
+
+  src: url("../assets/fonts/segoe-wp-light.ttf");
+}
+
+@font-face {
+  font-family: "Asap";
+
+  src: url("../assets/fonts/Asap-Regular.otf");
+}
+
+@font-face {
+  font-family: "PT Sans";
+
+  src: url("../assets/fonts/pt-sans-regular.ttf");
+}
+
+@font-face {
+  font-family: "PT Sans Narrow";
+
+  src: url("../assets/fonts/pt-sans-narrow.ttf");
+}
