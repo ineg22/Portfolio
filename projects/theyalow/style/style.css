@@ -6,6 +6,42 @@ body {
   padding: 0;
 }
 
+.iframe {
+  margin: 0 auto;
+  width: 640px;
+  height: 1553px;
+  background-color: white;
+}
+
+.global-btn {
+  position: fixed;
+  bottom: 85px;
+  right: 55px;
+}
+
+.global-btn a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.global-btn .btn-back,
+.global-btn .btn-view {
+  width: 120px;
+  height: 32px;
+  font-size: 28px;
+  background-color: lightgray;
+  text-align: center;
+  border-radius: 30%;
+  border: 1px solid black;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.global-btn .btn-back p,
+.global-btn .btn-view p {
+  margin: 0;
+}
+
 .global-wrapper {
   position: relative;
 
@@ -864,6 +900,9 @@ button.right-btn:hover {
   background-color: rgb(42, 17, 49);
 }
 
+.hidden {
+  display: none;
+}
 
 /* 640 x 1553 */
 

@@ -1,0 +1,238 @@
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.global-wrapper {
+  width: 1024px;
+  margin: 0 auto;
+}
+
+.swiper-container {
+  width: 1024px;
+  height: 452px;
+}
+
+.head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto 20px;
+  width: 100%;
+  height: 100px;
+}
+
+.head .head__photo-wrap {
+  height: 100px;
+  margin-right: 20px;
+}
+
+.head .head__info-wrap p {
+  margin: 8px 0;
+}
+
+.head .head__info-wrap p:nth-child(1) {
+  font-size: 1.5rem;
+}
+
+.education {
+  margin: 20px auto;
+  width: 100%;
+}
+
+.education .education__head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 20px;
+  border-top: 4px solid black;
+  cursor: pointer;
+}
+
+.education .education__head p {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+.education .education__head span {
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+  font-size: 2rem;
+}
+
+.education .education__body {
+  border-top: 2px solid black;
+}
+
+.education .education__body p {
+  margin: 5px 0;
+}
+
+.education .education__body li {
+  margin-bottom: 14px;
+}
+
+.education .hidden {
+  display: none;
+}
+
+.projects {
+  position: relative;
+  margin: 20px auto 0;
+  width: 100%;
+  height: 500px;
+  border-top: 4px solid black;
+}
+
+.projects .projects__head p {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+  padding: 0 20px;
+}
+
+.projects .projects__head .desk {
+  display: none;
+  position: absolute;
+  right: 20px;
+  top: 16px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid black;
+  cursor: pointer;
+}
+
+.projects .projects__head .desk p {
+  position: relative;
+  right: 135px;
+  bottom: 20px;
+  white-space: nowrap;
+}
+
+.projects .projects__head .hidden {
+  display: none;
+}
+
+.projects .projects__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.slider .slide .description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.slider .slide .about {
+  display: block;
+  padding: 10px;
+}
+
+.slider .slide .about > p {
+  font-size: 1.5rem;
+}
+
+.slider .slide .hidden {
+  display: none;
+}
+
+.ctrl-left {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50px;
+  cursor: pointer;
+  font-size: 4rem;
+}
+
+.ctrl-left:hover {
+  color: red;
+}
+
+.ctrl-right {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50px;
+  cursor: pointer;
+  font-size: 4rem;
+}
+
+.ctrl-right:hover {
+  color: red;
+}
+
+@media (max-width: 1024px) {
+  .global-wrapper {
+    margin: 0;
+    width: 100%;
+  }
+  .swiper-container {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (min-width: 641px) {
+  .slider .slide .hidden {
+    display: block;
+  }
+}
+
+@media (max-width: 640px) {
+  .projects .projects__head .desk {
+    display: block;
+  }
+  .ctrl-left,
+  .ctrl-right {
+    display: none;
+  }
+  .description {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .project-name {
+    display: none;
+  }
+  .slider .slide .description {
+    border: 0;
+  }
+  .slider .slide .about {
+    display: block;
+  }
+  .slider .slide .hidden {
+    display: none;
+  }
+}
+/*# sourceMappingURL=style.css.map */

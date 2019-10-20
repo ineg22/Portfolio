@@ -27,7 +27,7 @@ function moveSlideLeft(slider, left, right) {
 }
 
 function moveSlideRight(slider, left, right) {
-  return function() {
+  return function () {
     if (slider.classList[1] === 'mini-slider__second-pos') {
       slider.classList.remove('mini-slider__second-pos');
       slider.classList.add('mini-slider__third-pos');
@@ -57,3 +57,33 @@ function slideSelect(evt) {
     }
   }, 0);
 }
+
+const view = document.querySelector('.btn-view');
+const mob = document.querySelector('.btn-mob');
+const desk = document.querySelector('.btn-desk');
+const gw = document.querySelector('.global-wrapper');
+const iframe = document.querySelector('.iframe');
+
+window.addEventListener('load', () => {
+  if (document.body.clientWidth < 375) {
+    view.classList.add('hidden');
+  }
+})
+
+view.addEventListener('click', () => {
+  if (!gw.classList.contains('hidden')) {
+    gw.classList.add('hidden');
+    iframe.classList.remove('hidden');
+    mob.classList.add('hidden');
+    desk.classList.remove('hidden');
+    document.querySelector('.iframe iframe').contentDocument.querySelector('.global-btn').classList.add('hidden');
+    document.querySelector('body').style = "background-color: darkgray;";
+
+  } else {
+    gw.classList.remove('hidden');
+    iframe.classList.add('hidden');
+    mob.classList.remove('hidden');
+    desk.classList.add('hidden');
+    document.querySelector('body').style = "background-color: initial;";
+  }
+})
