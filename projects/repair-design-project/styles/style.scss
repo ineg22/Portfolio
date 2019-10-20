@@ -32,6 +32,42 @@ li {
   margin: 0 auto;
 }
 
+
+.iframe {
+  margin: 0 auto;
+  width: 375px;
+  height: 8796px;
+  background-color: #ffffff;
+}
+
+.global-btn {
+  position: fixed;
+  bottom: 85px;
+  right: 55px;
+
+  a {
+    text-decoration: none;
+    color: #000000;
+  }
+
+  .btn-back,
+  .btn-view {
+    width: 120px;
+    height: 32px;
+    font-size: 28px;
+    background-color: lightgray;
+    text-align: center;
+    border-radius: 30%;
+    border: 1px solid black;
+    margin-bottom: 20px;
+    cursor: pointer;
+
+    p {
+      margin: 0;
+    }
+  }
+}
+
 .mob {
   display: none;
 }
@@ -2846,6 +2882,7 @@ li {
     }
 
     .team__body {
+
       .team__card-wrap:nth-child(2),
       .team__card-wrap:nth-child(3) {
         display: flex;

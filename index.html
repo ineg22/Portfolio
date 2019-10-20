@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="./styles/swiper.min.css">
+  <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+  <div class="global-wrapper">
+    <div class="head">
+      <div class="head__photo-wrap">
+        <img src="./assets/kermit.jpg" alt="kermit">
+      </div>
+      <div class="head__info-wrap">
+        <p>Evgeny Ivanov</p>
+        <p><a href="https://github.com/ineg22">Github</a></p>
+        <p><a href="https://t.me/ineg_xd">Telegram</a></p>
+      </div>
+    </div>
+
+    <div class="education">
+      <div class="education__head" id="eduHead">
+        <p>Education</p>
+        <span id="arrow">&gt;</span>
+      </div>
+      <div class="education__body" id="eduBody">
+        <ul>
+          <li>
+            <p>School</p>
+            <p>1998 - 2009</p>
+          </li>
+          <li>
+            <p>University</p>
+            <p>2009 - 2014</p>
+          </li>
+          <li>
+            <p>RSSchool Courses</p>
+            <p>current time</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="projects">
+      <div class="projects__head">
+        <p>Projects</p>
+        <div class="desk"><p class="desk--show hidden">Show desk</p><p class="desk--hide">Hide desk</p></div>
+      </div>
+      <div class="projects__body swiper-container">
+        <div class="slider swiper-wrapper">
+          <div class="slide swiper-slide" id="slide1">
+            <div class="description">
+              <div class="about">
+                <p>Theyalow project</p>
+                <ul>
+                  <li>
+                    <p>Desktop and mobile view</p>
+                  </li>
+                  <li>
+                    <p>99% perfect pixel</p>
+                  </li>
+                  <li>
+                    <p>Pure HTML and CSS</p>
+                  </li>
+                  <li>
+                    <p>Interactive</p>
+                  </li>
+                </ul>
+              </div>
+              <div class="preview">
+                <a href="./projects/theyalow/index.html"><img src="./assets/theyalow.jpg" alt="theyalow"></a>
+              </div>
+            </div>
+          </div>
+          <div class="slide swiper-slide" id="slide2">
+            <div class="description">
+              <div class="about">
+                  <p>Repair-design project</p>
+                  <ul>
+                    <li>
+                      <p>Desktop and mobile view</p>
+                    </li>
+                    <li>
+                      <p>Responsive web design</p>
+                    </li>
+                    <li>
+                      <p>90% perfect pixel</p>
+                    </li>
+                    <li>
+                      <p>Interactive</p>
+                    </li>
+                  </ul>
+              </div>
+              <div class="preview">
+                <a href="./projects/repair-design-project/index.html"><img src="./assets/repair.jpg" alt="repair"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="ctrl-left swiper-button-prev" id="leftBtn">&lt;</div>
+        <div class="ctrl-right swiper-button-next" id="rightBtn">&gt;</div>
+      </div>
+    </div>
+  </div>
+  
+  <script src="./js/swiper.min.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
