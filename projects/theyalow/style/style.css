@@ -7,33 +7,36 @@ body {
 }
 
 .iframe {
-  margin: 0 auto;
   width: 640px;
   height: 1553px;
+  margin: 0 auto;
+
   background-color: white;
 }
 
 .global-btn {
   position: fixed;
-  bottom: 85px;
   right: 55px;
+  bottom: 85px;
 }
 
 .global-btn a {
-  text-decoration: none;
   color: #000000;
+  text-decoration: none;
 }
 
 .global-btn .btn-back,
 .global-btn .btn-view {
   width: 120px;
   height: 32px;
-  font-size: 28px;
-  background-color: lightgray;
-  text-align: center;
-  border-radius: 30%;
-  border: 1px solid black;
   margin-bottom: 20px;
+
+  font-size: 28px;
+  text-align: center;
+
+  background-color: lightgray;
+  border: 1px solid black;
+  border-radius: 30%;
   cursor: pointer;
 }
 
@@ -124,10 +127,9 @@ div.logo-wrapper > h1 {
 }
 
 .nav-wrapper nav {
-  margin-left: 7px;
-
   width: 453px;
   height: 41px;
+  margin-left: 7px;
 
   background-color: #f5c505;
   box-shadow: -4px -5px 0 rgba(245, 197, 6, 0.3), -8px -8px 0 rgba(245, 197, 6, 0.25);
@@ -904,8 +906,6 @@ button.right-btn:hover {
   display: none;
 }
 
-/* 640 x 1553 */
-
 @media (max-width: 640px) {
   .footer,
   .global-wrapper,
@@ -975,10 +975,11 @@ button.right-btn:hover {
   }
 
   header > div.nav-wrapper nav {
-    margin: 0;
-    box-shadow: none;
     width: 100%;
     height: 100%;
+    margin: 0;
+
+    box-shadow: none;
   }
 
   header > div.nav-wrapper ul {

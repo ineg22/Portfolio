@@ -34,32 +34,35 @@ li {
 
 
 .iframe {
-  margin: 0 auto;
   width: 375px;
   height: 8796px;
+  margin: 0 auto;
+
   background-color: #ffffff;
 }
 
 .global-btn {
   position: fixed;
-  bottom: 85px;
   right: 55px;
+  bottom: 85px;
 
   a {
-    text-decoration: none;
     color: #000000;
+    text-decoration: none;
   }
 
   .btn-back,
   .btn-view {
     width: 120px;
     height: 32px;
-    font-size: 28px;
-    background-color: lightgray;
-    text-align: center;
-    border-radius: 30%;
-    border: 1px solid black;
     margin-bottom: 20px;
+
+    font-size: 28px;
+    text-align: center;
+
+    background-color: lightgray;
+    border: 1px solid black;
+    border-radius: 30%;
     cursor: pointer;
 
     p {
@@ -76,16 +79,18 @@ li {
   display: none;
 }
 
-//------------------------------------------------------------------------------------------------------------------//
 .mini-slider {
+  position: relative;
+
   width: 340px;
   height: 242px;
   overflow: hidden;
-  position: relative;
 
   .mini-slider__slides {
-    display: flex;
     position: relative;
+
+    display: flex;
+
     transition: transform 500ms linear;
 
     img {
@@ -96,16 +101,18 @@ li {
   .mini-slider__controls {
     .mini-slider__controls-left {
       position: absolute;
-      right: 13px;
       top: 43%;
+      right: 13px;
+
       width: 36px;
       height: 36px;
-      border-radius: 50%;
+
       background-color: $gold;
+      border-radius: 50%;
 
       img {
-        margin-left: 14px;
         margin-top: 8px;
+        margin-left: 14px;
       }
 
       &:hover {
@@ -117,14 +124,16 @@ li {
       position: absolute;
       top: 43%;
       left: 13px;
+
       width: 36px;
       height: 36px;
-      border-radius: 50%;
+
       background-color: $gold;
+      border-radius: 50%;
 
       img {
-        margin-left: 11px;
         margin-top: 8px;
+        margin-left: 11px;
       }
 
       &:hover {
@@ -146,7 +155,6 @@ li {
   }
 }
 
-//------------------------------------------------------------------------------------------------------------------//
 .header,
 .footer {
   display: flex;
@@ -228,7 +236,6 @@ li {
   }
 }
 
-//------------------------------------------------------------------------------------------------------------------//
 .preview {
   position: relative;
 
@@ -385,7 +392,6 @@ li {
   }
 }
 
-//------------------------------------------------------------------------------------------------------------------//
 .completed-projects {
   display: flex;
   height: 1026px;
@@ -481,7 +487,7 @@ li {
       display: flex;
       margin: 41px 0 0 3px;
 
-      &>* {
+      & > * {
         margin-right: 23px;
       }
 
@@ -503,7 +509,7 @@ li {
         display: none;
       }
 
-      .little-slider__select:checked+div {
+      .little-slider__select:checked + div {
         background: #ffffff;
       }
 
@@ -668,7 +674,6 @@ li {
   }
 }
 
-//------------------------------------------------------------------------------------------------------------------//
 .online-control {
   position: relative;
   bottom: 324px;
@@ -887,7 +892,6 @@ li {
   }
 }
 
-//------------------------------------------------------------------------------------------------------------------//
 .types-of-repair {
   height: 871px;
 
@@ -928,13 +932,13 @@ li {
   .card-list-wrap {
     position: relative;
     bottom: 156px;
-    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.05);
 
     width: 330px;
     height: 286px;
     margin: 0 auto;
 
     background-color: #ffffff;
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.05);
 
     p {
       margin: 25px 0 5px 34px;
@@ -978,7 +982,6 @@ li {
   }
 }
 
-//------------------------------------------------------------------------------------------------------------------//
 .steps-before {
   display: flex;
   height: 928px;
@@ -1014,7 +1017,7 @@ li {
         bottom: 33px;
         left: 75px;
 
-        >p {
+        > p {
           line-height: 35px;
         }
       }
@@ -1023,7 +1026,7 @@ li {
         bottom: 16px;
         left: 100px;
 
-        >p {
+        > p {
           line-height: 35px;
         }
       }
@@ -1233,12 +1236,7 @@ li {
   }
 }
 
-//------------------------------------------------------------------------------------------------------------------//
 .fantasies {
-  .mini-slider {
-    display: none;
-  }
-
   position: relative;
   z-index: -1;
 
@@ -1247,6 +1245,10 @@ li {
   height: 864px;
 
   background: url("../assets/img/fantasie-bg.jpg");
+
+  .mini-slider {
+    display: none;
+  }
 
   .fantasies__shadow {
     position: absolute;
@@ -1317,7 +1319,6 @@ li {
   }
 }
 
-//------------------------------------------------------------------------------------------------------------------//
 .design-project {
   height: 620px;
 }
@@ -1377,8 +1378,6 @@ li {
     left: 31px;
   }
 }
-
-//------------------------------------------------------------------------------------------------------------------//
 
 .steps-after {
   display: flex;
@@ -1470,7 +1469,7 @@ li {
     display: flex;
     margin-top: 102px;
 
-    &>* {
+    & > * {
       margin-right: 23px;
     }
 
@@ -1492,7 +1491,7 @@ li {
       display: none;
     }
 
-    .little-slider__select:checked+div {
+    .little-slider__select:checked + div {
       background: #ffffff;
     }
 
@@ -1539,7 +1538,6 @@ li {
     }
 
     .steps-after__steps-item {
-
       &:nth-child(1),
       &:nth-child(4) {
         width: 127px;
@@ -1585,8 +1583,6 @@ li {
     }
   }
 }
-
-//------------------------------------------------------------------------------------------------------------------//
 
 .team {
   display: flex;
@@ -1730,8 +1726,6 @@ li {
   }
 }
 
-//------------------------------------------------------------------------------------------------------------------//
-
 .clients {
   display: flex;
   flex-direction: column;
@@ -1871,8 +1865,6 @@ li {
   }
 }
 
-//------------------------------------------------------------------------------------------------------------------//
-
 .contacts {
   display: flex;
   flex-shrink: 0;
@@ -1931,6 +1923,7 @@ li {
   .contacts__map-wrap {
     position: relative;
     bottom: 103px;
+
     width: 925px;
     height: 465px;
   }
@@ -2069,17 +2062,11 @@ li {
   }
 }
 
-
-//------------------------------------------------------------------------------------------------------------------//
-
 .footer {
   height: 133px;
 
   background-color: $black-bg;
 }
-
-//------------------------------------------------------------------------------------------------------------------//
-//------------------------------------------------------------------------------------------------------------------//
 
 @media only screen and (max-width: 1440px) {
   .global-wrapper {
@@ -2115,8 +2102,8 @@ li {
 
   .clients {
     .clients__body {
-      width: 100%;
       justify-content: space-around;
+      width: 100%;
 
       .clients__card-wrap:nth-child(3) {
         display: none;
@@ -2126,7 +2113,6 @@ li {
 }
 
 @media only screen and (max-width: 1280px) {
-
   .footer .call-rq,
   .header .call-rq {
     display: none;
@@ -2134,8 +2120,8 @@ li {
 
   .team {
     .team__body {
-      width: 100%;
       justify-content: space-around;
+      width: 100%;
     }
   }
 
@@ -2185,11 +2171,9 @@ li {
       margin: 0 auto;
     }
   }
-
 }
 
 @media only screen and (max-width: 1100px) {
-
   .footer,
   .header {
     .menu {
@@ -2274,9 +2258,9 @@ li {
 
   .design-project {
     .design-project__head {
+      width: 100%;
       margin: 0 0 0 0;
       padding-top: 50px;
-      width: 100%;
 
       p {
         width: 100%;
@@ -2326,7 +2310,6 @@ li {
 }
 
 @media only screen and (max-width: 600px) {
-
   .footer,
   .header {
     padding-left: 20px;
@@ -2404,9 +2387,11 @@ li {
   }
 
   .fantasies {
-    height: 0;
     position: relative;
     z-index: 1;
+
+    height: 0;
+
     background-color: transparent;
 
     .fantasies__list,
@@ -2416,10 +2401,12 @@ li {
 
     .fantasies__list-head {
       position: absolute;
-      margin: 0;
-      left: 0;
       bottom: 152px;
+      left: 0;
+
+      margin: 0;
       padding: 0 45px;
+
       font-size: 22px;
       line-height: 30px;
       text-align: center;
@@ -2427,16 +2414,15 @@ li {
 
     .mini-slider {
       position: absolute;
-      display: flex;
-      left: 19px;
       bottom: -121px;
+      left: 19px;
+
+      display: flex;
 
       .mini-slider__slides img {
         width: 340px;
       }
     }
-
-
   }
 
   .steps-before {
@@ -2480,7 +2466,7 @@ li {
     height: 476px;
 
     .short-about {
-      background: url(../assets/img/preview.jpg) no-repeat center/242%;
+      background: url("../assets/img/preview.jpg") no-repeat center/242%;
 
       .short-about__submit--mob {
         display: block;
@@ -2490,15 +2476,17 @@ li {
         margin: 0;
 
         .short-about__head {
+          margin: 83px 40px 0 17px;
+
           font-size: 23px;
           line-height: 31px;
-          margin: 83px 40px 0 17px;
         }
 
         .short-about__body {
+          margin: 12px 40px 0 17px;
+
           font-size: 18px;
           line-height: 24px;
-          margin: 12px 40px 0 17px;
         }
 
         .short-about__btns {
@@ -2518,6 +2506,7 @@ li {
 
   .completed-projects {
     height: 727px;
+
     background-color: $black-bg;
 
     .little-slider .little-slider__controls {
@@ -2529,16 +2518,16 @@ li {
     }
 
     .completed-short {
-      padding: 0;
-      width: 100%;
       flex-basis: initial;
+      width: 100%;
+      padding: 0;
 
       .completed-short__head {
         margin-top: 34px;
-        text-align: center;
 
         font-size: 22px;
         line-height: 30px;
+        text-align: center;
 
         &::after {
           display: none;
@@ -2547,12 +2536,12 @@ li {
 
       .completed-short__body {
         margin: 25px 0 39px 0;
-        text-align: center;
-        padding-left: 30px;
         padding-right: 31px;
+        padding-left: 30px;
 
         font-size: 14px;
         line-height: 22px;
+        text-align: center;
       }
 
       .mini-slider {
@@ -2565,16 +2554,17 @@ li {
       margin-top: 37px;
 
       .little-slider__list {
-        margin: 0 0 0 0;
-        height: 100%;
         width: 100%;
+        height: 100%;
+        margin: 0 0 0 0;
 
         .little-slider__item {
-          margin: 0 0 0 18px;
           flex-basis: 38%;
+          margin: 0 0 0 18px;
 
           .little-slider__head {
             margin: 0;
+
             font-size: 14px;
             line-height: 12px;
           }
@@ -2591,20 +2581,22 @@ li {
         }
       }
     }
-
   }
 
   .online-control {
-    height: 826px;
     bottom: 0;
+
+    height: 826px;
+
     background-color: $black-bg;
 
     .online-control__head {
       width: 200px;
 
       p {
-        font-size: 22px;
         margin: 0 0 17px 0;
+
+        font-size: 22px;
       }
     }
 
@@ -2612,10 +2604,11 @@ li {
       width: 100%;
       height: 200px;
       padding: 23px 18px 0 20px;
+
       font-size: 14px;
       line-height: 24px;
-      white-space: initial;
       color: #ffffff;
+      white-space: initial;
 
       &::before {
         position: relative;
@@ -2625,9 +2618,9 @@ li {
 
     .online-control__form-wrap {
       display: block;
-      margin-top: 0px;
       width: 100%;
       height: 298px;
+      margin-top: 0;
 
       ::placeholder {
         color: #ffffff;
@@ -2637,52 +2630,61 @@ li {
         width: 90%;
         margin: 0;
         padding-left: 5px;
-        color: rgba(255, 255, 255, 0.5);
+
         font-size: 15px;
         line-height: 17px;
+        color: rgba(255, 255, 255, 0.5);
+
         border-bottom: 1px solid #ffffff60;
 
         input {
-          background-color: $black-bg;
-          color: #ffffff;
           font-size: 18px;
           line-height: 25px;
+          color: #ffffff;
+
+          background-color: $black-bg;
         }
       }
 
       .oc-form__phone {
         position: relative;
         top: 31px;
+
         width: 90%;
         margin: 0;
         padding-left: 5px;
-        color: rgba(255, 255, 255, 0.5);
+
         font-size: 15px;
         line-height: 17px;
+        color: rgba(255, 255, 255, 0.5);
+
         border-bottom: 1px solid #ffffff60;
 
         input {
-          background-color: $black-bg;
-          color: #ffffff;
           font-size: 18px;
           line-height: 25px;
+          color: #ffffff;
+
+          background-color: $black-bg;
         }
       }
 
       .oc-form__submit {
-        margin-right: 0;
-        margin-left: 0;
-        order: 2;
-        width: 91%;
         position: relative;
         top: 48px;
+
+        order: 2;
+        width: 91%;
+        margin-right: 0;
+        margin-left: 0;
       }
 
       .oc-form__check {
-        margin-left: 0;
         position: relative;
-        right: 15px;
         top: 22px;
+        right: 15px;
+
+        margin-left: 0;
 
         span {
           color: #ffffff;
@@ -2696,6 +2698,7 @@ li {
 
     .types-of-repair__head {
       margin-top: 82px;
+
       font-size: 22px;
 
       img {
@@ -2704,7 +2707,6 @@ li {
     }
 
     .types-of-repair__body {
-
       .card-three,
       .card-two {
         display: block;
@@ -2724,6 +2726,7 @@ li {
 
         .card-list-wrap {
           bottom: 171px;
+
           width: 270px;
           margin: 0;
 
@@ -2734,8 +2737,8 @@ li {
         }
 
         .types-of-repair__list {
-          margin: 0 0 0 31px;
           height: 193px;
+          margin: 0 0 0 31px;
 
           .types-of-repair__list-item {
             font-size: 13px;
@@ -2744,10 +2747,12 @@ li {
         }
 
         .card-price-wrap {
-          left: 0;
           bottom: 251px;
+          left: 0;
+
           width: 190px;
           height: 40px;
+
           font-size: 15px;
           line-height: 41px;
         }
@@ -2761,6 +2766,7 @@ li {
 
   .design-project {
     height: 1963px;
+
     background-color: $black-bg;
 
     .desk {
@@ -2768,11 +2774,12 @@ li {
     }
 
     .design-project__head {
-      padding-top: 153px;
       margin-bottom: 58px;
+      padding-top: 153px;
 
       span {
         margin-top: 18px;
+
         font-size: 22px;
         line-height: 30px;
         color: #ffffff;
@@ -2781,14 +2788,14 @@ li {
       p {
         width: 290px;
         margin-top: 21px;
-        color: #ffffff;
+
         font-size: 15px;
         line-height: 20px;
+        color: #ffffff;
       }
     }
 
     .design-project__body {
-
       .card-three,
       .card-two {
         display: block;
@@ -2808,20 +2815,22 @@ li {
 
         .card-list-wrap {
           bottom: 161px;
+
           width: 270px;
           margin: 0;
 
           p {
+            margin-top: 21px;
+            margin-left: 32px;
+
             font-size: 15px;
             line-height: 21px;
-            margin-left: 32px;
-            margin-top: 21px;
           }
         }
 
         .types-of-repair__list {
-          margin: 0 0 0 31px;
           height: 131px;
+          margin: 0 0 0 31px;
 
           .types-of-repair__list-item {
             font-size: 13px;
@@ -2830,10 +2839,12 @@ li {
         }
 
         .card-price-wrap {
-          left: 0;
           bottom: 196px;
+          left: 0;
+
           width: 190px;
           height: 40px;
+
           font-size: 15px;
           line-height: 41px;
         }
@@ -2865,8 +2876,8 @@ li {
     height: 1705px;
 
     .team__head {
-      margin-top: 0;
       width: 100%;
+      margin-top: 0;
 
       span {
         font-size: 22px;
@@ -2874,23 +2885,23 @@ li {
       }
 
       p {
-        font-size: 15px;
-        line-height: 20px;
         margin-top: 19px;
         padding: 0 15px;
+
+        font-size: 15px;
+        line-height: 20px;
       }
     }
 
     .team__body {
+      justify-content: center;
+      width: 100%;
+      padding-left: 32px;
 
       .team__card-wrap:nth-child(2),
       .team__card-wrap:nth-child(3) {
         display: flex;
       }
-
-      width: 100%;
-      justify-content: center;
-      padding-left: 32px;
 
       .card-img-wrap {
         width: 304px;
@@ -2905,10 +2916,12 @@ li {
 
   .contacts {
     height: 1012px;
+
     background: $black-bg;
 
     .contacts__form-wrap {
       bottom: 0;
+
       width: 100%;
       min-height: 495px;
 
@@ -2920,8 +2933,8 @@ li {
         }
 
         label {
-          margin: 0 0 54px 0;
           width: 90%;
+          margin: 0 0 54px 0;
         }
 
         .oc-form__check {
@@ -2935,10 +2948,11 @@ li {
     }
 
     .contacts__address-wrap {
+      bottom: 0;
+
+      order: 2;
       width: 310px;
       margin-top: 38px;
-      bottom: 0;
-      order: 2;
 
       p {
         font-size: 18px;
@@ -2948,12 +2962,13 @@ li {
 
     .contacts__icons-wrap {
       bottom: -23px;
+
       order: 3;
 
       div {
-        margin-right: 22px;
         width: 39px;
         height: 39px;
+        margin-right: 22px;
       }
 
       div:nth-child(1) img {
@@ -2968,12 +2983,13 @@ li {
     }
 
     .contacts__map-wrap {
-      margin: 45px 0 0 0;
+      position: relative;
       bottom: 0;
+
       display: block;
       width: 340px;
       height: 255px;
-      position: relative;
+      margin: 45px 0 0 0;
     }
   }
 }

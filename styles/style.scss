@@ -1,6 +1,6 @@
 a {
-  text-decoration: none;
   color: black;
+  text-decoration: none;
 }
 
 .global-wrapper {
@@ -15,9 +15,9 @@ a {
 
 .head {
   display: flex;
-  margin: 0 auto 20px;
   width: 100%;
   height: 100px;
+  margin: 0 auto 20px;
 
   .head__photo-wrap {
     height: 100px;
@@ -36,25 +36,28 @@ a {
 }
 
 .education {
-  margin: 20px auto;
   width: 100%;
+  margin: 20px auto;
 
   .education__head {
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
     padding: 0 20px;
+
     border-top: 4px solid black;
     cursor: pointer;
 
     p {
-      font-size: 1.5rem;
       margin: 1rem 0;
+
+      font-size: 1.5rem;
     }
 
     span {
-      transform: rotate(270deg);
       font-size: 2rem;
+
+      transform: rotate(270deg);
     }
   }
 
@@ -77,33 +80,39 @@ a {
 
 .projects {
   position: relative;
-  margin: 20px auto 0;
+
   width: 100%;
   height: 500px;
+  margin: 20px auto 0;
+
   border-top: 4px solid black;
 
   .projects__head {
     p {
-      font-size: 1.5rem;
       margin: 1rem 0;
       padding: 0 20px;
+
+      font-size: 1.5rem;
     }
 
     .desk {
-      display: none;
       position: absolute;
-      right: 20px;
       top: 16px;
+      right: 20px;
+
+      display: none;
       width: 20px;
       height: 20px;
-      border-radius: 50%;
+
       border: 2px solid black;
+      border-radius: 50%;
       cursor: pointer;
 
       p {
         position: relative;
         right: 135px;
         bottom: 20px;
+
         white-space: nowrap;
       }
     }
@@ -114,8 +123,9 @@ a {
   }
 
   .projects__body {
-    display: flex;
     position: relative;
+
+    display: flex;
   }
 }
 
@@ -130,7 +140,7 @@ a {
       display: block;
       padding: 10px;
 
-      &>p {
+      & > p {
         font-size: 1.5rem;
       }
     }
@@ -143,12 +153,15 @@ a {
 
 .ctrl-left {
   position: absolute;
+
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   width: 50px;
-  cursor: pointer;
+
   font-size: 4rem;
+
+  cursor: pointer;
 
   &:hover {
     color: red;
@@ -157,12 +170,15 @@ a {
 
 .ctrl-right {
   position: absolute;
+
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   width: 50px;
-  cursor: pointer;
+
   font-size: 4rem;
+
+  cursor: pointer;
 
   &:hover {
     color: red;
@@ -171,15 +187,14 @@ a {
 
 @media (max-width: 1024px) {
   .global-wrapper {
-    margin: 0;
     width: 100%;
+    margin: 0;
   }
 
   .swiper-container {
     width: 100%;
     height: auto;
   }
-
 }
 
 @media (min-width: 641px) {
